@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.error-placeholder::placeholder {
+  color: red;
+}
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+.form-first-line,
+.form-second-line,
+.form-third-line {
+  margin-bottom: 1rem;
+}
+.send-message-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.send-message-btn svg {
+  fill: white;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+}
+
+
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 18.5vh;
+  background-color: #616161;
+  margin-top: 5rem;
+}
+.partners-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.partners-number span {
+  margin-top: 0.625rem;
+  font-size: 1.25rem !important;
+}
+.portfolio-image-section {
+  opacity: 0.75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  background-image: url("../assets/images/parallax2.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 57.5vh;
+}
+.portfolio-image-section p {
+  width: 32.5rem;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.75rem;
+  font-size: 2.5rem;
+  padding: 0.9375rem 0;
+}
+.portfolio-section {
+  margin-top: 6.25rem;
+}
+.portfolio-section-title {
+  text-align: center;
+  font-weight: 500;
+  color: #777;
+  font-size: 1.875rem;
+}
+.portfolio-section-pre-title {
+  text-align: center;
+  margin-top: 1.875rem;
+  font-style: italic;
+  color: #777;
+  font-size: 1.25rem;
+  letter-spacing: 0.03125rem;
+}
+.portfolio-section-pre-title:nth-of-type(2) {
+  margin-top: 0.9375rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  max-width: 75rem;
+  margin: 3.75rem auto 0 auto;
+}
+.gallery-item {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  border-radius: 0.625rem;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.gallery-item :hover {
+  opacity: 0.3125;
+}
+.portfolio-section .btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-section button {
+  font-size: 1.125rem;
+  margin-top: 3.75rem;
+  background-color: #f1f1f1;
+  border: none;
+  padding: 1.375rem 2rem;
+  cursor: pointer;
+}
+.portfolio-section button:hover {
+  background-color: #ccc;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.625rem;
+  max-width: 75rem;
+  margin: 1.25rem auto;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  max-width: 31.25rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease;
+  border-radius: 0.625rem;
+}
+.modal:hover .modal-image,
+.modal:hover .modal-description {
+  transform: scale(1.05);
+}
+.modal-image {
+  cursor: pointer;
+}
+.modal-description {
+  color: white;
+  margin-top: 1.25rem;
+  color: #777;
+  font-size: 1.55rem;
+  transition: transform 0.5s ease;
+}
+.contact-section {
+  margin-top: 6.25rem;
+}
+.contact-section-bg-image {
+  opacity: 0.75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  background-image: url("../assets/images/parallax3.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 57.5vh;
+}
+.contact-section-bg-image p {
+  width: 32.5rem;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.75rem;
+  font-size: 2.5rem;
+  padding: 0.9375rem 0;
+}
+.contact-section-title {
+  margin-top: 6.25rem;
+  text-align: center;
+  font-weight: 500;
+  color: #777;
+  font-size: 1.875rem;
+}
+.contact-section-pre-title {
+  text-align: center;
+  margin-top: 1.875rem;
+  font-style: italic;
+  color: #777;
+  font-size: 1.25rem;
+  letter-spacing: 0.03125rem;
+}
+.feedback-section {
+  max-width: 63.5%;
+  height: 65vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 4.375rem auto 0 auto;
+}
+.feedback-section ul {
+  list-style-type: none;
+}
+.feedback-section li {
+  margin-top: 0.9375rem;
+  font-size: 1.5rem;
+  color: #777;
+}
+.feedback-section li span {
+  display: inline-block;
+  width: 1.875rem;
+  height: auto;
+  margin-right: 1.5625rem;
+}
+.feedback-section li i {
+  font-size: 1.875rem;
+  color: #777;
+}
+.feedback-section li i:hover {
+  color: #000;
+}
+.feedback-section-left {
+  width: 33%;
+}
+.feedback-section-right {
+  width: 65%;
+}
+.feedback-section-right ul li svg {
+  fill: #777;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.feedback-section-right ul li svg:hover {
+  fill: #000;
+}
+.feedback-section-right li {
+  display: flex;
+  align-items: center;
+}
+.feedback-section-left-image-container {
+  max-width: 22.875rem;
+  max-height: 12.5rem;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+.feedback-section-left-image-container img {
+  width: 100%;
+  height: 100%;
+}
+.feedback-section-right-offer-text {
+  margin-top: 1.875rem;
+  color: #777;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: flex-end;
+}
+.feedback-section-right-offer-text svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #777;
+}
+.feedback-section form {
+  margin-top: 0.9375rem;
+}
+.form-first-line input {
+  width: 23.87rem;
+  height: 3.5rem;
+  font-size: 1.25rem;
+  padding-left: 0.625rem;
+}
+.form-first-line input:nth-of-type(1) {
+  margin-right: 1.25rem;
+}
+.form-second-line {
+  margin-top: 0.625rem;
+}
+.form-second-line input {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.25rem;
+  padding-left: 0.625rem;
+}
+.form-third-line {
+  display: flex;
+  justify-content: flex-end;
+}
+.send-message-btn {
+  margin-top: 1.25rem;
+  width: 12.5rem;
+  height: 3.4375rem;
+  background-color: #000;
+  color: white;
+  font-size: 1.125rem;
+  border: none;
+}
+.send-message-btn:hover {
+  background-color: #ccc;
+  color: black;
+}
+.send-message-btn:hover .send-message-btn-svg {
+  fill: #000;
+}
+.send-message-btn i {
+  margin-right: 0.3125rem;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #000;
+  height: 41.4vh;
+  opacity: 0.6;
+}
+.footer:hover {
+  opacity: 1;
+}
+.footer-btn-for-page-up button {
+  width: 10rem;
+  height: 3.4375rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-btn-for-page-up button a {
+  text-decoration: none;
+  color: black;
+}
+.footer-btn-for-page-up button:hover {
+  background-color: #ccc;
+}
+.footer-btn-for-page-up button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+}
+.footer-social-media {
+  margin: 1.875rem 0 2.5rem 0;
+  display: flex;
+  align-items: center;
+}
+.footer-social-media a {
+  display: inline-block;
+  text-decoration: none;
+  fill: white;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin: 0 0.1875rem;
+  cursor: pointer;
+}
+.footer-social-media a:hover {
+  fill: #ccc;
+}
+.footer-social-media svg {
+  width: 100%;
+  height: 100%;
+}
+.footer-guide p {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.footer-guide a {
+  color: white;
+}
+.form-router {
+  text-decoration: none;
+}
