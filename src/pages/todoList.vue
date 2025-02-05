@@ -20,7 +20,7 @@ const addTodo = () => {
     <div class="todo">
         <div class="todo__header">
             <div class="todo__title">
-                My To Do List
+                My New To Do List 
             </div>
             <div class="todo__add-todo">
                 <input v-model="newTodo" type="text" placeholder="Title...">
